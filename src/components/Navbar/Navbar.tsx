@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import { Contract } from '../Contract/Contract'
 
 export function Navbar() {
     const [showMyContract, setShowMyContract] = useState(false)
@@ -8,7 +7,7 @@ export function Navbar() {
 
     return (
         <>
-            <div className="flex flex-row items-center justify-center text-blue-200 bg-gray-600 rounded-b-xl">
+            <div className="flex flex-row items-center justify-center text-blue-200 bg-gray-600 rounded-xl">
                 <a className="m-4 rounded hover:bg-gray-800" href="#">
                     <svg
                         className="w-6 h-6 stroke-current"
@@ -129,12 +128,6 @@ export function Navbar() {
                     </svg>
                     <span className="absolute top-0 left-0 w-2 h-2 bg-blue-500 rounded-full"></span>
                 </a>
-            </div>
-            <div className="inset-0 bg-blend-overlay bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
-                <Contract
-                    onClose={handleOnCloseContract}
-                    visible={showMyContract}
-                />
             </div>
         </>
     )

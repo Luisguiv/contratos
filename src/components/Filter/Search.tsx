@@ -15,7 +15,7 @@ export function Search() {
                         className="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none"
                     />
                     <button className="bg-gray-800 text-white rounded-full font-semibold px-8 py-4 hover:bg-gray-400 focus:bg-gray-600 focus:outline-none">
-                        Search
+                        Buscar
                     </button>
                 </form>
                 <div className="glow glow-1 z-10 bg-teal-400 absolute"></div>

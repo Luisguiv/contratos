@@ -3,7 +3,7 @@ import './style.css'
 
 export function Dropdown() {
     return (
-        <div className="relative">
+        <div className="relative w-full h-full">
             <input type="checkbox" id="sortbox" className="hidden absolute" />
             <label
                 htmlFor="sortbox"
