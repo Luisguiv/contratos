@@ -45,31 +45,31 @@ export function Calendar() {
                 </div>
             </div>
             <div className="flex justify-between font-medium uppercase text-xs pt-4 pb-2 border-t">
-                <div className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-purple-500 text-purple-500 shadow-md">
+                <div className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-cyan-500 text-cyan-500 shadow-md">
                     sun
                 </div>
 
-                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-indigo-500 text-indigo-500 shadow-md">
+                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-blue-500 text-blue-500 shadow-md">
                     mon
                 </span>
 
-                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-indigo-500 text-indigo-500 shadow-md">
+                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-blue-500 text-blue-500 shadow-md">
                     tue
                 </span>
 
-                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-indigo-500 text-indigo-500 shadow-md">
+                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-blue-500 text-blue-500 shadow-md">
                     wed
                 </span>
 
-                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-indigo-500 text-indigo-500 shadow-md">
+                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-blue-500 text-blue-500 shadow-md">
                     thu
                 </span>
 
-                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-indigo-500 text-indigo-500 shadow-md">
+                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-blue-500 text-blue-500 shadow-md">
                     fri
                 </span>
 
-                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-indigo-500 text-indigo-500 shadow-md">
+                <span className="px-3 border rounded-sm w-14 h-5 flex items-center justify-center border-blue-500 text-blue-500 shadow-md">
                     sat
                 </span>
             </div>
@@ -83,130 +83,130 @@ export function Calendar() {
                     31
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     01
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     02
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     03
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     04
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     05
                 </span>
             </div>
             <div className="flex justify-between font-medium text-sm pb-2">
-                <span className="px-1 w-14 flex justify-center items-center border border-purple-500 text-purple-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border border-cyan-500 text-cyan-500 cursor-pointer">
                     06
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     07
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     08
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     09
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     10
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     11
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     12
                 </span>
             </div>
 
             <div className="flex justify-between font-medium text-sm pb-2">
-                <span className="px-1 w-14 flex justify-center items-center border border-purple-500 text-purple-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border border-cyan-500 text-cyan-500 cursor-pointer">
                     13
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     14
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     15
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     16
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     17
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     18
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     19
                 </span>
             </div>
 
             <div className="flex justify-between font-medium text-sm pb-2">
-                <span className="px-1 w-14 flex justify-center items-center border border-purple-500 text-purple-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border border-cyan-500 text-cyan-500 cursor-pointer">
                     20
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     21
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     22
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     23
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     24
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border border-indigo-500 text-white bg-indigo-500 rounded-2xl cursor-pointer shadow-md">
+                <span className="px-1 w-14 flex justify-center items-center border border-blue-500 text-white bg-blue-500 rounded-2xl cursor-pointer shadow-md">
                     25
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     26
                 </span>
             </div>
 
             <div className="flex justify-between font-medium text-sm pb-2">
-                <span className="px-1 w-14 flex justify-center items-center border border-purple-500 text-purple-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border border-cyan-500 text-cyan-500 cursor-pointer">
                     27
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     28
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     29
                 </span>
 
-                <span className="px-1 w-14 flex justify-center items-center border hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+                <span className="px-1 w-14 flex justify-center items-center border hover:border-blue-500 hover:text-blue-500 cursor-pointer">
                     30
                 </span>
 
