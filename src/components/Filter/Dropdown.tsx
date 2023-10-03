@@ -38,7 +38,7 @@ export function Dropdown() {
                             href="#"
                             className="block px-3 py-2 hover:bg-gray-200"
                         >
-                            Manutenção
+                            Serviço
                         </a>
                     </li>
                 </ul>
