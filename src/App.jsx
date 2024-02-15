@@ -11,11 +11,21 @@ import axios from 'axios';
 
 function App() {
     const [items, setItems] = useState([]);
+    const [cities, setCidade] = useState([]);
 
     const fetchData = async () => {
         try {
           const response = await axios.get('https://localhost:8080/contrato');
           setItems(response.data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+    };
+
+    const fetchCidade = async () => {
+        try {
+          const responseCity = await axios.get('https://localhost:8080/cidade');
+          setCidade(responseCity.data);
         } catch (error) {
           console.error('Error fetching data:', error);
         }
@@ -32,6 +42,7 @@ function App() {
     }
 
     useEffect(() => {
+        fetchCidade();
         fetchData();
     }, []);
 
@@ -89,6 +100,7 @@ function App() {
                 </div>
             </div>
             <Contract
+                cities={cities}
                 onClose={handleOnCloseContract}
                 visible={showMyContract}
             />
