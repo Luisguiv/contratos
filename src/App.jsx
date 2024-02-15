@@ -4,15 +4,36 @@ import { Table } from './components/Table/Table'
 import { Search } from './components/Filter/Search'
 import { Dropdown } from './components/Filter/Dropdown'
 import { CButton } from './components/Calendar/CButton'
-import { useState } from 'react'
 import { Contract } from './components/Contract/Contract'
 
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
 function App() {
+    const [items, setItems] = useState([]);
+
+    const fetchData = async () => {
+        try {
+          const response = await axios.get('https://localhost:8080/contrato');
+          setItems(response.data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+    };
+
     const [showMyModal, setShowMyModal] = useState(false)
     const handleOnClose = () => setShowMyModal(false)
 
     const [showMyContract, setShowMyContract] = useState(false)
-    const handleOnCloseContract = () => setShowMyContract(false)
+
+    const handleOnCloseContract = () => {
+        fetchData();
+        setShowMyContract(false);
+    }
+
+    useEffect(() => {
+        fetchData();
+    }, []);
 
     return (
         <>
@@ -48,9 +69,7 @@ function App() {
                                 </div>
 
                                 <div className="flex items-end">
-                                    <button
-                                        onClick={() => setShowMyModal(true)}
-                                    >
+                                    <button onClick={() => setShowMyModal(true)}>
                                         <div className="flex items-end mr-5">
                                             <div className="relative bg-blue-500 hover:bg-gray-800 text-white font-bold rounded p-2">
                                                 <span className="text-lg text-gray-200">
@@ -60,16 +79,10 @@ function App() {
                                         </div>
                                     </button>
                                 </div>
-
-                                <div className="flex items-end">
-                                    <div className="bg-blue-500 hover:bg-gray-800 text-white font-bold rounded p-2">
-                                        <Dropdown />
-                                    </div>
-                                </div>
                             </div>
 
                             <div>
-                                <Table />
+                                <Table items={items} />
                             </div>
                         </div>
                     </div>
