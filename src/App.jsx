@@ -6,30 +6,32 @@ import { Dropdown } from './components/Filter/Dropdown'
 import { CButton } from './components/Calendar/CButton'
 import { Contract } from './components/Contract/Contract'
 
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function App() {
-    const [items, setItems] = useState([]);
-    const [cities, setCidade] = useState([]);
+    const [items, setItems] = useState([])
+    const [cidades, setCidade] = useState([])
 
     const fetchData = async () => {
         try {
-          const response = await axios.get('https://localhost:8080/contrato');
-          setItems(response.data);
+            const response = await axios.get('http://localhost:8080/contrato')
+            setItems(response.data)
         } catch (error) {
-          console.error('Error fetching data:', error);
+            console.error('Error fetching data:', error)
         }
-    };
+    }
 
     const fetchCidade = async () => {
         try {
-          const responseCity = await axios.get('https://localhost:8080/cidade');
-          setCidade(responseCity.data);
+            const responseCidade = await axios.get(
+                'http://localhost:8080/cidade'
+            )
+            setCidade(responseCidade.data)
         } catch (error) {
-          console.error('Error fetching data:', error);
+            console.error('Error fetching data:', error)
         }
-    };
+    }
 
     const [showMyModal, setShowMyModal] = useState(false)
     const handleOnClose = () => setShowMyModal(false)
@@ -37,14 +39,14 @@ function App() {
     const [showMyContract, setShowMyContract] = useState(false)
 
     const handleOnCloseContract = () => {
-        fetchData();
-        setShowMyContract(false);
+        fetchData()
+        setShowMyContract(false)
     }
 
     useEffect(() => {
-        fetchCidade();
-        fetchData();
-    }, []);
+        fetchCidade()
+        fetchData()
+    }, [])
 
     return (
         <>
@@ -80,7 +82,9 @@ function App() {
                                 </div>
 
                                 <div className="flex items-end">
-                                    <button onClick={() => setShowMyModal(true)}>
+                                    <button
+                                        onClick={() => setShowMyModal(true)}
+                                    >
                                         <div className="flex items-end mr-5">
                                             <div className="relative bg-blue-500 hover:bg-gray-800 text-white font-bold rounded p-2">
                                                 <span className="text-lg text-gray-200">
@@ -100,9 +104,9 @@ function App() {
                 </div>
             </div>
             <Contract
-                cities={cities}
                 onClose={handleOnCloseContract}
                 visible={showMyContract}
+                cidades={cidades}
             />
             <CButton onClose={handleOnClose} visible={showMyModal} />
         </>
